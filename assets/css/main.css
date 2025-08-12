@@ -1237,32 +1237,23 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
+#header {
     display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 
-    background-image: url("csweng.jpg"); /* or url("/path/to/csweng.jpg") */
-    background-size: cover; /* Makes it fill the area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    /* Background image styling */
+    background-image: url("engback.jpg");
+    background-size: cover;      /* Scales image to fill space */
+    background-position: center; /* Centers it */
+    background-repeat: no-repeat;
 
-    max-width: 100%;
-    text-align: center;
+    /* Make it fill the whole viewport */
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;   /* Full page width */
 }
+
 
 
 		#header > * {
